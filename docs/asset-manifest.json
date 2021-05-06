@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.59c0205f.chunk.css",
+    "main.js": "/static/js/main.beeed0a0.chunk.js",
+    "main.js.map": "/static/js/main.beeed0a0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.93c1e420.js",
+    "runtime-main.js.map": "/static/js/runtime-main.93c1e420.js.map",
+    "static/css/2.81fc0e8c.chunk.css": "/static/css/2.81fc0e8c.chunk.css",
+    "static/js/2.f94b3d80.chunk.js": "/static/js/2.f94b3d80.chunk.js",
+    "static/js/2.f94b3d80.chunk.js.map": "/static/js/2.f94b3d80.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.81fc0e8c.chunk.css.map": "/static/css/2.81fc0e8c.chunk.css.map",
+    "static/css/main.59c0205f.chunk.css.map": "/static/css/main.59c0205f.chunk.css.map",
+    "static/js/2.f94b3d80.chunk.js.LICENSE.txt": "/static/js/2.f94b3d80.chunk.js.LICENSE.txt",
+    "static/media/bg3.jpg": "/static/media/bg3.43589cc7.jpg",
+    "static/media/all.min.css": "/static/media/fa-solid-900.f4f93856.woff",
+    "static/media/github.svg": "/static/media/github.6c955556.svg",
+    "static/media/google.svg": "/static/media/google.eae9aa93.svg",
+    "static/media/nucleo.css": "/static/media/nucleo-icons.d6a66724.ttf",
+    "static/media/team-4-800x800.jpg": "/static/media/team-4-800x800.99c612eb.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.93c1e420.js",
+    "static/css/2.81fc0e8c.chunk.css",
+    "static/js/2.f94b3d80.chunk.js",
+    "static/css/main.59c0205f.chunk.css",
+    "static/js/main.beeed0a0.chunk.js"
+  ]
+}
