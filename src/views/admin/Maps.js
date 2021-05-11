@@ -19,10 +19,11 @@ import TableRow from "@material-ui/core/TableRow";
 import Typography from "@material-ui/core/Typography";
 // @material-ui/icons components
 import GetApp from "@material-ui/icons/GetApp";
+import SearchIcon from "@material-ui/icons/Search";
+import InputBase from "@material-ui/core/InputBase";
 
 // core components
 import Header from "components/Headers/Header.js";
-
 
 import componentStyles from "assets/theme/views/admin/dashboard.js";
 
@@ -41,7 +42,6 @@ function Dashboard() {
         marginTop="-6rem"
         classes={{ root: classes.containerRoot }}
       >
-     
         <Grid container component={Box} marginTop="3rem">
           <Grid
             item
@@ -63,15 +63,48 @@ function Dashboard() {
                     alignItems="center"
                     justifyContent="space-between"
                   >
-                    <Grid item xs="auto">
+                    <Container
+                      maxWidth={false}
+                      component={Box}
+                      classes={{ root: classes.containerRoot }}
+                    >
                       <Box
-                        component={Typography}
-                        variant="h3"
-                        marginBottom="0!important"
+                        display="flex"
+                        justifyContent="space-between"
+                        alignItems="center"
+                        width="100%"
+                        marginTop="0.5rem"
                       >
-                        Documentos
+                        <div>
+                          <Typography
+                            className={classes.brandTitle}
+                            variant="h4"
+                            component="a"
+                          >
+                            Documentos
+                          </Typography>
+                        </div>
+                        <Box display="flex" alignItems="center" width="auto">
+                          <Box
+                            display="flex"
+                            alignItems="center"
+                            width="auto"
+                            marginRight="1rem"
+                            classes={{
+                              root: classes.searchBox,
+                            }}
+                          >
+                            <SearchIcon className={classes.searchIcon} />
+                            <InputBase
+                              placeholder="Buscar Documento"
+                              classes={{
+                                input: classes.searchInput,
+                              }}
+                            />
+                          </Box>
+                        </Box>
                       </Box>
-                    </Grid>
+                    </Container>
                   </Grid>
                 }
                 classes={{ root: classes.cardHeaderRoot }}
@@ -84,7 +117,7 @@ function Dashboard() {
                 >
                   <TableHead>
                     <TableRow>
-                    <TableCell
+                      <TableCell
                         classes={{
                           root:
                             classes.tableCellRoot +
@@ -136,9 +169,9 @@ function Dashboard() {
                       </TableCell>
                     </TableRow>
                   </TableHead>
-                  <TableBody>                    
+                  <TableBody>
                     <TableRow>
-                    <TableCell
+                      <TableCell
                         classes={{
                           root:
                             classes.tableCellRoot +
@@ -162,13 +195,13 @@ function Dashboard() {
                         variant="head"
                         scope="row"
                       >
-                        Documento 1	
+                        Documento 1
                       </TableCell>
                       <TableCell classes={{ root: classes.tableCellRoot }}>
-                        13/11/2020	
+                        13/11/2020
                       </TableCell>
                       <TableCell classes={{ root: classes.tableCellRoot }}>
-                      Nicolas
+                        Nicolas
                       </TableCell>
                       <Box
                         component={TableCell}
@@ -176,17 +209,17 @@ function Dashboard() {
                         marginBottom="-2px"
                       >
                         <Box
-                           component={GetApp}
-                           width="1rem!important"
-                           height="1rem!important"
-                           marginRight="1rem"
-                           color={theme.palette.success.main}
+                          component={GetApp}
+                          width="1rem!important"
+                          height="1rem!important"
+                          marginRight="1rem"
+                          color={theme.palette.success.main}
                         />
                         Documento1.docx
                       </Box>
                     </TableRow>
                     <TableRow>
-                    <TableCell
+                      <TableCell
                         classes={{
                           root:
                             classes.tableCellRoot +
@@ -213,10 +246,10 @@ function Dashboard() {
                         Documento 2
                       </TableCell>
                       <TableCell classes={{ root: classes.tableCellRoot }}>
-                      13/11/2020	
+                        13/11/2020
                       </TableCell>
                       <TableCell classes={{ root: classes.tableCellRoot }}>
-                      Nicolas
+                        Nicolas
                       </TableCell>
                       <Box
                         component={TableCell}
@@ -224,17 +257,17 @@ function Dashboard() {
                         marginBottom="-2px"
                       >
                         <Box
-                             component={GetApp}
-                             width="1rem!important"
-                             height="1rem!important"
-                             marginRight="1rem"
-                             color={theme.palette.success.main}
+                          component={GetApp}
+                          width="1rem!important"
+                          height="1rem!important"
+                          marginRight="1rem"
+                          color={theme.palette.success.main}
                         />
                         Documento2.docx
                       </Box>
                     </TableRow>
                     <TableRow>
-                    <TableCell
+                      <TableCell
                         classes={{
                           root:
                             classes.tableCellRoot +
@@ -261,10 +294,10 @@ function Dashboard() {
                         Documento 3
                       </TableCell>
                       <TableCell classes={{ root: classes.tableCellRoot }}>
-                      13/11/2020	
+                        13/11/2020
                       </TableCell>
                       <TableCell classes={{ root: classes.tableCellRoot }}>
-                      Nicolas
+                        Nicolas
                       </TableCell>
                       <Box
                         component={TableCell}
@@ -282,7 +315,7 @@ function Dashboard() {
                       </Box>
                     </TableRow>
                     <TableRow>
-                    <TableCell
+                      <TableCell
                         classes={{
                           root:
                             classes.tableCellRoot +
@@ -309,10 +342,10 @@ function Dashboard() {
                         Documento 4
                       </TableCell>
                       <TableCell classes={{ root: classes.tableCellRoot }}>
-                      13/11/2020	
+                        13/11/2020
                       </TableCell>
                       <TableCell classes={{ root: classes.tableCellRoot }}>
-                      Nicolas
+                        Nicolas
                       </TableCell>
                       <Box
                         component={TableCell}
@@ -327,16 +360,16 @@ function Dashboard() {
                           color={theme.palette.success.main}
                         />
                         <a
-                        href="#mui"
-                        className={classes.cardProfileLink}
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        Documento4.docx
-                      </a>
+                          href="#mui"
+                          className={classes.cardProfileLink}
+                          onClick={(e) => e.preventDefault()}
+                        >
+                          Documento4.docx
+                        </a>
                       </Box>
                     </TableRow>
                     <TableRow>
-                    <TableCell
+                      <TableCell
                         classes={{
                           root:
                             classes.tableCellRoot +
@@ -372,7 +405,7 @@ function Dashboard() {
                             classes.borderBottomUnset,
                         }}
                       >
-                        13/11/2020	
+                        13/11/2020
                       </TableCell>
                       <TableCell
                         classes={{
@@ -394,11 +427,11 @@ function Dashboard() {
                         marginBottom="-2px"
                       >
                         <Box
-                           component={GetApp}
-                           width="1rem!important"
-                           height="1rem!important"
-                           marginRight="1rem"
-                           color={theme.palette.success.main}
+                          component={GetApp}
+                          width="1rem!important"
+                          height="1rem!important"
+                          marginRight="1rem"
+                          color={theme.palette.success.main}
                         />
                         Documento5.docx
                       </Box>
@@ -408,7 +441,6 @@ function Dashboard() {
               </TableContainer>
             </Card>
           </Grid>
-          
         </Grid>
       </Container>
     </>

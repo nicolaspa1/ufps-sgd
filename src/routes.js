@@ -32,7 +32,7 @@ var routes = [
     layout: "/admin",
   },
   {
-    path: "/icons",
+    path: "/informacion",
     name: "Informacion",
     icon: Info,
     iconColor: "Primary",
@@ -40,7 +40,7 @@ var routes = [
     layout: "/admin",
   },
   {
-    path: "/maps",
+    path: "/documentos",
     name: "Documentos",
     icon: Description,
     iconColor: "Warning",
@@ -48,7 +48,7 @@ var routes = [
     layout: "/admin",
   },
   {
-    path: "/user-profile",
+    path: "/solicitudes",
     name: "Solicitudes",
     icon: Edit,
     iconColor: "WarningLight",
@@ -56,7 +56,7 @@ var routes = [
     layout: "/admin",
   },
   {
-    path: "/tables",
+    path: "/submitDocument",
     name: "Agregar Documento",
     icon: NoteAdd,
     iconColor: "Error",

@@ -51,7 +51,7 @@ export default function NavbarDropdown() {
         component="h6"
         classes={{ root: classes.menuTitle }}
       >
-        Welcome!
+        Bienvenido!
       </Typography>
       <Box
         display="flex!important"
@@ -65,7 +65,7 @@ export default function NavbarDropdown() {
           height="1.25rem!important"
           marginRight="1rem"
         />
-        <span>My profile</span>
+        <span>Inicio</span>
       </Box>
       <Box
         display="flex!important"
@@ -122,7 +122,7 @@ export default function NavbarDropdown() {
           height="1.25rem!important"
           marginRight="1rem"
         />
-        <span>Logout</span>
+        <span>Cerrar Sesion</span>
       </Box>
     </Menu>
   );
@@ -143,12 +143,13 @@ export default function NavbarDropdown() {
       >
         <Avatar
           alt="..."
-          src={require("assets/img/theme/team-4-800x800.jpg").default}
+          src={require("assets/img/theme/logoufps.png").default}
           classes={{
             root: classes.avatarRoot,
           }}
         />
-        <Hidden smDown>Jessica Jones</Hidden>
+        {/* //TODO:reemplazar por nombre se la sesion */}
+        <Hidden smDown>NicolasPa</Hidden>
       </Button>
       {renderMenu}
     </>
