@@ -1,8 +1,5 @@
-//TODO: Eliminar comentarios de importaciones Innecesarias
-
 import React from "react";
 
-// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import { useTheme } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
@@ -17,12 +14,10 @@ import TableContainer from "@material-ui/core/TableContainer";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Typography from "@material-ui/core/Typography";
-// @material-ui/icons components
 import GetApp from "@material-ui/icons/GetApp";
 import SearchIcon from "@material-ui/icons/Search";
 import InputBase from "@material-ui/core/InputBase";
 
-// core components
 import Header from "components/Headers/Header.js";
 
 import componentStyles from "assets/theme/views/admin/dashboard.js";
@@ -35,7 +30,6 @@ function Dashboard() {
   return (
     <>
       <Header />
-      {/* Page content */}
       <Container
         maxWidth={false}
         component={Box}

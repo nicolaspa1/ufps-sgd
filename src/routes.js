@@ -1,11 +1,11 @@
 // core components
 import Dashboard from "views/admin/Dashboard.js";
-import Icons from "views/admin/Icons.js";
+import Informacion from "views/admin/Informacion.js";
 import Login from "views/auth/Login.js";
-import Maps from "views/admin/Maps.js";
+import Documentos from "views/admin/Documentos.js";
 import Profile from "views/admin/Profile.js";
 import Register from "views/auth/Register.js";
-import Tables from "views/admin/Tables.js";
+import AddDocument from "views/admin/AddDocument.js";
 // @material-ui/icons components
 import PersonAdd from "@material-ui/icons/PersonAdd";
 import NoteAdd from "@material-ui/icons/NoteAdd";
@@ -36,7 +36,7 @@ var routes = [
     name: "Informacion",
     icon: Info,
     iconColor: "Primary",
-    component: Icons,
+    component: Informacion,
     layout: "/admin",
   },
   {
@@ -44,7 +44,7 @@ var routes = [
     name: "Documentos",
     icon: Description,
     iconColor: "Warning",
-    component: Maps,
+    component: Documentos,
     layout: "/admin",
   },
   {
@@ -60,7 +60,7 @@ var routes = [
     name: "Agregar Documento",
     icon: NoteAdd,
     iconColor: "Error",
-    component: Tables,
+    component: AddDocument,
     layout: "/admin",
   },
   {

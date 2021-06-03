@@ -11,10 +11,11 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Typography from "@material-ui/core/Typography";
 // @material-ui/icons components
 import DirectionsRun from "@material-ui/icons/DirectionsRun";
-import EventNote from "@material-ui/icons/EventNote";
-import LiveHelp from "@material-ui/icons/LiveHelp";
+import Info from "@material-ui/icons/Info";
 import Person from "@material-ui/icons/Person";
-import Settings from "@material-ui/icons/Settings";
+import Description from "@material-ui/icons/Description";
+import Edit from "@material-ui/icons/Edit";
+
 
 // core components
 import componentStyles from "assets/theme/components/navbar-dropdown.js";
@@ -74,12 +75,12 @@ export default function NavbarDropdown() {
         onClick={handleMenuClose}
       >
         <Box
-          component={Settings}
+          component={Info}
           width="1.25rem!important"
           height="1.25rem!important"
           marginRight="1rem"
         />
-        <span>Settings</span>
+        <span>Informacion</span>
       </Box>
       <Box
         display="flex!important"
@@ -88,12 +89,12 @@ export default function NavbarDropdown() {
         onClick={handleMenuClose}
       >
         <Box
-          component={EventNote}
+          component={Description}
           width="1.25rem!important"
           height="1.25rem!important"
           marginRight="1rem"
         />
-        <span>Activity</span>
+        <span>Documentos</span>
       </Box>
       <Box
         display="flex!important"
@@ -102,12 +103,12 @@ export default function NavbarDropdown() {
         onClick={handleMenuClose}
       >
         <Box
-          component={LiveHelp}
+          component={Edit}
           width="1.25rem!important"
           height="1.25rem!important"
           marginRight="1rem"
         />
-        <span>Support</span>
+        <span>Solicitudes</span>
       </Box>
       <Divider component="div" classes={{ root: classes.dividerRoot }} />
       <Box
